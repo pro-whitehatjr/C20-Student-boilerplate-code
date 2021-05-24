@@ -28,9 +28,7 @@ function setup() {
      isStatic: true
    };
   
-  var ops={
-    isStatic:true
-  };
+  
 
   ground = Bodies.rectangle(200,390,400,20,ground_options);
   World.add(world,ground);
