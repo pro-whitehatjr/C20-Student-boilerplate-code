@@ -8,9 +8,6 @@ let engine;
 let world;
 var ball;
 var ground;
-var angle=60;
-var poly;
-
 
 function setup() {
   createCanvas(400,400);
@@ -27,7 +24,6 @@ function setup() {
      isStatic: true
    };
   
-  
 
   ground = Bodies.rectangle(200,390,400,20,ground_options);
   World.add(world,ground);
@@ -35,9 +31,6 @@ function setup() {
   ball = Bodies.circle(100,10,20,ball_options);
   World.add(world,ball);
   
-  
-  
-
   rectMode(CENTER);
   ellipseMode(RADIUS);
 }
@@ -48,14 +41,8 @@ function draw()
   background(51);
   Engine.update(engine);
   
-  
-
   ellipse(ball.position.x,ball.position.y,20);
   rect(ground.position.x,ground.position.y,400,20);
  
-
-
-  
-  
 }
 
